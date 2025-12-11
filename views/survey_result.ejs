@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+    <title>Survey Submitted</title>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+</head>
+<body>
+    <h1>Thank you for your feedback, <%= data.firstname %>!</h1>
+    <h3>Summary of your answers:</h3>
+    <ul>
+        <li><strong>Email:</strong> <%= data.email %></li>
+        <li><strong>Age:</strong> <%= data.age %></li>
+        <li><strong>Favorite Drink:</strong> <%= data.favorite_drink %></li>
+        <li><strong>Student Status:</strong> <%= data.is_student ? "Yes" : "No" %></li>
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>
