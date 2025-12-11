@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+    <title><%= shopName %></title>
+    <link rel="stylesheet" type="text/css" href="/main.css" /> </head>
+<body>
+    <h1>Welcome to <%= shopName %></h1>
+    <h2>Our Products:</h2>
+    <ul>
+        <% for(let i=0; i < productCategories.length; i++) { %>
+            <li><%= productCategories[i] %></li>
+        <% } %>
+    </ul>
+    <nav>
+        <a href="/">Home</a> | <a href="/about">About</a> | <a href="/search">Search</a> | <a href="/register">Register</a> | <a href="/survey">Survey</a>
+    </nav>
+</body>
+</html>

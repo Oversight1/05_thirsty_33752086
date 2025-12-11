@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <title>About <%= shopName %></title>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+</head>
+<body>
+    <h1>About <%= shopName %></h1>
+    <p>We are the premier student drink shop.</p>
+    
+    <h3>Our Locations:</h3>
+    <table border="1">
+        <tr>
+            <th>Location</th>
+            <th>Manager</th>
+            <th>Email</th>
+        </tr>
+        <% shopLocations.forEach(function(shop) { %>
+            <tr>
+                <td><%= shop.location %></td>
+                <td><%= shop.manager %></td>
+                <td><%= shop.email %></td>
+            </tr>
+        <% }); %>
+    </table>
+    
+    <nav>
+        <a href="/">Home</a> | <a href="/about">About</a> | <a href="/search">Search</a> | <a href="/register">Register</a> | <a href="/survey">Survey</a>
+    </nav>
+</body>
+</html>
