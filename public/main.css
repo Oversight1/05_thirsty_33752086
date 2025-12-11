@@ -1,0 +1,126 @@
+/* GLOBAL STYLES */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto; /* Centers the content on the page */
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+h1 {
+    border-bottom: 2px solid #3498db; /* Adds a nice underline to main titles */
+    padding-bottom: 10px;
+}
+
+/* NAVIGATION (Found in index.ejs and about.ejs) */
+nav {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+nav a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    color: #1abc9c; /* Changes color when hovering */
+    text-decoration: underline;
+}
+
+/* TABLES (Found in about.ejs) */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Removes the double border look */
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #34495e;
+    color: #ffffff;
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+/* FORMS (Found in register.ejs, search.ejs, survey.ejs) */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    max-width: 500px; /* Keeps forms from getting too wide */
+}
+
+label {
+    display: block; /* Puts labels on their own line */
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%; /* Full width inputs */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't break layout */
+}
+
+/* SUBMIT BUTTONS */
+input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* LISTS (Found in index.ejs products) */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* UTILITY: Survey Result specific */
+.survey-summary li strong {
+    color: #2c3e50;
+}
